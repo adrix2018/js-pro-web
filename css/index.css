@@ -392,7 +392,7 @@ header nav .mobile {
     #news .features-header h3 {
       font-weight: bold; }
   #news #features {
-    background: url("../img/PRO_bg.png") no-repeat;
+    background: url("../img/PRO_bg.jpg") no-repeat;
     background-size: cover;
     border-top: 1px solid #1a1a1a;
     width: auto;
@@ -1260,7 +1260,8 @@ header nav .mobile {
     padding-top: 5rem;
     position: static;
     margin: auto;
-    width: 100%; }
+    width: 100%;
+    cursor: crosshair; }
     #gallery .wrapper .gallery {
       width: 200px;
       margin: auto; }
@@ -1276,15 +1277,14 @@ header nav .mobile {
         margin: 3rem auto;
         height: 525px;
         width: 900px;
-        border: 1px solid #777;
-        border-radius: 10px;
+        border: 1px solid #232323;
+        border-radius: 50px;
         box-shadow: 5px 0 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     #gallery .wrapper #exit {
-      background-color: rgba(255, 255, 255, 0.7);
-      padding-top: 2.5rem;
-      padding-bottom: 10rem;
-      border-top: 5px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 5px 0 4px rgba(255, 255, 255, 0.36), 0 3px 6px rgba(255, 255, 255, 0.53); }
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.95));
+      border-top: 1px solid rgba(255, 255, 255, 0);
+      box-shadow: 5px 0 4px rgba(255, 255, 255, 0.36), 0 3px 6px rgba(255, 255, 255, 0.53);
+      cursor: default; }
       #gallery .wrapper #exit .container {
         display: flex;
         flex-flow: row wrap;
@@ -1304,7 +1304,8 @@ header nav .mobile {
             height: 250px;
             display: block;
             cursor: pointer;
-            border: 2px dashed #ddd; }
+            border: 1px dashed #ccc;
+            box-shadow: 5px 0 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
       #gallery .wrapper #exit .social {
         margin: 5rem auto; }
         #gallery .wrapper #exit .social h1 {
@@ -1321,6 +1322,8 @@ header nav .mobile {
           transform: scale(1.2);
           transition: 1s ease-in-out;
           cursor: pointer; }
+      #gallery .wrapper #exit .bg-gallery {
+        width: 45%; }
 
 /*#exit {
   background: url('../img/PRO_bg2.jpg') no-repeat center;
@@ -1328,15 +1331,19 @@ header nav .mobile {
   height: 95vh;
   box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }*/
+@media screen and (min-width: 2400px) {
+  #gallery .wrapper #exit .bg-gallery {
+    width: 25%; } }
 @media screen and (max-width: 1100px) {
   #gallery .wrapper .video-bg {
-    background: 0;
-    margin: auto;
-    border-radius: 0; }
+    width: 100%;
+    height: 100vw; }
     #gallery .wrapper .video-bg iframe {
       height: auto;
       width: 100%;
-      height: 60%; } }
+      height: 60%;
+      margin: auto;
+      border-radius: 0; } }
 @media screen and (max-width: 680px) {
   #gallery .wrapper .video-bg {
     width: 100%; }
@@ -1344,7 +1351,9 @@ header nav .mobile {
       height: auto;
       width: 95%;
       height: 50%;
-      border-radius: 0; } }
+      border-radius: 0; }
+  #gallery .wrapper #exit .bg-gallery {
+    width: 100%; } }
 html.lb-disable-scrolling {
   overflow: hidden;
   /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
@@ -1543,8 +1552,7 @@ body {
   width: 100%; }
 
 #particles {
-  position: absolute;
-  width: 100%; }
+  position: absolute; }
 
 #discord {
   position: fixed;
@@ -1627,14 +1635,18 @@ footer {
 .fadeIn {
   animation-name: fadeIn; }
 
-@media only screen and (max-width: 550px) {
-  footer {
-    font-size: 9px; } }
 @media only screen and (min-width: 2080px) {
   footer {
     font-size: 3rem;
     height: 19rem; }
     footer .PRO {
       width: 100px; } }
+@media screen and (max-width: 1100px) {
+  #particles {
+    position: absolute;
+    top: -20; } }
+@media only screen and (max-width: 550px) {
+  footer {
+    font-size: 9px; } }
 
 /*# sourceMappingURL=index.css.map */
