@@ -1,0 +1,100 @@
+#about {
+  margin: auto;
+  box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  background: url('../img/PRO_bg1.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  .container {
+    background: rgba(20,20,20,0.7);
+    width: 70%;
+    box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px;
+      font-family: 'Audiowide';
+      color: #fff;
+      text-shadow: 3px 2px #222;
+      padding-top: 5rem;
+      margin: auto;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px #222;
+      margin: auto 5rem;
+    }
+
+    hr {
+      width: 20%;
+      opacity: 0.4;
+    }
+
+    .discord {
+      padding-bottom: 5rem;
+
+      img {
+        padding-top: 2rem;
+        cursor: pointer;
+        width: 180px;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+        transition: 1s ease-in-out;
+      }
+    }
+
+    .wrapper {
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      .gallery__item {
+        width: 300px;
+        height: 300px;
+        padding: 1rem;
+
+        .gallery__image {
+          width:100%;
+          height: 80%;
+          display:block;
+          border: 1px solid #999;
+          border-radius: 10px;
+          cursor: pointer;
+          box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:2400px) {
+  #about {
+    .container {
+      h1 {
+        font-size: 4em!important;
+      }
+
+      p {
+        font-size: 1.5em!important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:780px) {
+  #about {
+    padding: 0;
+    .container {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}

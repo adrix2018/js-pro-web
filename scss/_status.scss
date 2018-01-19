@@ -1,0 +1,102 @@
+#server-status {
+  //Rotom
+  .rotom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .rotom-hover {
+    position: fixed;
+    right: 60;
+    bottom: 50;
+    width: 100px;
+    cursor: pointer;
+    opacity: 0.9;
+    z-index: 3;
+  }
+
+  .rotom:hover + .ContentBack {
+    display: block;
+  }
+
+  .ContentBack {
+    display: none;
+  }//Rotom end
+
+  .ContentBack {
+    background-color: rgba(5,5,5,0.85);
+    position: fixed;
+    right: 70;
+    bottom: 70;
+    border-radius: 1rem;
+    width: 330px;
+    height: 170px;
+    padding: 1rem 0 2rem 2rem;
+    box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    z-index: 5;
+
+    .status {
+      display: flex;
+      flex-direction: row;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width:980px) {
+  #server-status {
+    .ContentBack {
+      width: 280px;
+      height: 170px;
+      right: 70;
+      bottom: 30;
+
+      .status {
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:420px) {
+  #server-status {
+    .ContentBack {
+      right: 45;
+      bottom: 100;
+      width: 330px;
+      height: 170px;
+    }
+  }
+}
+
+@media screen and (max-width:385px) {
+  #server-status {
+    .ContentBack {
+      right: 25;
+      bottom: 100;
+      width: 330px;
+      height: 170px;
+    }
+  }
+}
+
+@media screen and (max-width:320px) {
+  #server-status {
+    .ContentBack {
+      right: 40;
+      bottom: 100;
+      width: 230px;
+      height: 170px;
+    }
+  }
+}

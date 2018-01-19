@@ -1,0 +1,150 @@
+@import '_menu','_status','_slider','_news','_about','_register','_download','_rules','_ranking','_gallery','_lightbox';
+
+* {
+  font-family: Helvetica;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  //background: repeating-radial-gradient(#131313, #000, #222);
+  background: #1a1a1a;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+#snow {
+  position: absolute;
+  height: 75%;
+  left: -30;
+  width: 100%;
+}
+
+#particles {
+  position: absolute;
+  width: 100%;
+}
+
+#discord {
+  position: fixed;
+  left: -20;
+  bottom: 8.5;
+  width: 100px;
+  z-index: 1;
+
+  .discord {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#twitter {
+  position: fixed;
+  font-size: 30px;
+  left: -20;
+  bottom: 45;
+  width: 100px;
+  z-index: 1;
+  color: #59a9ff;
+}
+
+#insta {
+  position: fixed;
+  font-size: 30px;
+  left: -20;
+  bottom: 110;
+  width: 100px;
+  z-index: 1;
+  color: #fff;
+
+  .insta {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#youtube {
+  position: fixed;
+  left: -20;
+  bottom: 75;
+  width: 100px;
+  z-index: 1;
+
+  .youtube {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#discord:hover, #twitter:hover, #insta:hover, #youtube:hover {
+  transform: scale(1.3);
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.munchlax {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #111;
+  color: #fff;
+  margin: auto;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.PRO {
+  width: 48px;
+}
+
+// Animate
+.animated {
+  animation-duration: 2s;
+  animation-delay: 0.085s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+// End
+
+
+@media only screen and (max-width: 550px) {
+  footer {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width: 2080px) {
+  footer {
+    font-size: 3rem;
+    height: 19rem;
+
+    .PRO {
+      width: 100px;
+    }
+  }
+}

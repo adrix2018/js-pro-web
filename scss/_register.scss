@@ -1,0 +1,172 @@
+#register {
+  height: 120vh;
+  background: url('../img/PRO_bg3.png');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  .wrapper {
+    position: absolute;
+    padding: 0 2rem;
+    width: 40%;
+    top: 15%;
+    right: 30%;
+    background: rgba(5,5,5,0.8);
+    border-radius: 1rem;
+    box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+    .PRO_logo1 {
+      position: absolute;
+      width: 300px;
+      top: -25;
+      left: -30;
+    }
+
+    .Login_Form {
+      display: flex;
+      justify-content: center;
+
+      form {
+
+        .professor_logo {
+          position: absolute;
+          width: 140px;
+          right: 10%;
+          top: 30%;
+        }
+
+        table {
+          tr {
+            td {
+              text-align: center;
+              font-weight: bold;
+              color: #fff;
+              font-size: 90%;
+              width: 60%;
+            }
+
+            .button {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2080px) {
+
+  .download_logo {
+    width: 300px;
+  }
+
+  #register {
+    .wrapper {
+      .PRO_logo1 {
+        width: 400px;
+      }
+
+      .Login_Form {
+        form {
+          .professor_logo {
+            width: 230px!important;
+            right: 7%;
+            top: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1600px) {
+  #register {
+     .wrapper {
+       .Login_Form {
+         form {
+           .professor_logo {
+             right: 2.5%;
+             top: 28.5%;
+           }
+         }
+       }
+     }
+  }
+}
+
+@media screen and (max-width:1380px) {
+  #register {
+    height: 130vh;
+
+    .wrapper {
+      width: 60%;
+      right: 20%;
+
+      .PRO_logo1 {
+        width: 250px!important;
+      }
+
+      .Login_Form {
+        form {
+          .professor_logo {
+            right: 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:980px) {
+  #register {
+    height: 130vw;
+
+    .wrapper {
+      .Login_Form {
+        form {
+          .professor_logo {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:780px) {
+  #register {
+    height: 100%;
+    .wrapper {
+      padding-top: 5vw;
+      width: 100%;
+      height: auto;
+      position: static;
+      margin: auto;
+      border-radius: 0;
+    }
+  }
+
+  #register {
+    .wrapper {
+      .PRO_logo1 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:680px) {
+  #register {
+    height: auto;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #register {
+    .wrapper {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+#rules {
+  height: auto;
+  min-height: 100vh;
+  background: url('../img/PRO_bg3.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+
+  .wrapper {
+    margin: auto;
+    padding: 2rem 3rem;
+    width: 60%;
+    background: rgba(5,5,5,0.8);
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+    .terms {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      a {
+        padding: 0 10px;
+        h2 {
+          font-family: 'Audiowide';
+          cursor: pointer;
+        }
+      }
+
+      p {
+        color: #fff;
+      }
+    }
+
+    .terms1 {
+      h2 {
+        font-family: 'Audiowide';
+        color: #fff;
+
+      }
+
+      hr {
+        width: 60%;
+        opacity: 0.7;
+      }
+    }
+
+    .rules {
+
+    }
+
+    .modal {
+      .modal-dialog {
+          width: 80%;
+          margin: auto;
+
+        .modal-content {
+          background: #111;
+          color: #fff;
+
+          .modal-header {
+            font-family: 'Audiowide';
+
+            .close {
+              color: #fff;
+            }
+          }
+
+          .modal-body {
+            font-weight: bold;
+            text-align: left!important;
+
+            .message {
+              u {
+                color: #57abff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .disclaimer {
+      border: 1px solid #222;
+      border-radius: 5px;
+      margin-top: 2rem;
+      padding: 5rem;
+      background-color: rgba(90,140,180,0.08);
+      box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+      h2 {
+        font-family: 'Audiowide';
+        color: #fff;
+
+      }
+
+      hr {
+        width: 60%;
+        opacity: 0.7;
+      }
+
+      p {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1380px) {
+  #rules {
+    .wrapper {
+      width: 80%;
+      top: 10%;
+      right: 10%;
+    }
+  }
+}
+
+@media screen and (max-width:850px) {
+  #rules {
+    .wrapper {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width:780px) {
+  #rules {
+    padding: 0;
+    height: auto;
+    .wrapper {
+      padding-top: 5rem;
+      width: 100%;
+      height: auto;
+      position: static;
+
+      .terms {
+        flex-flow: column wrap;
+      }
+    }
+  }
+}

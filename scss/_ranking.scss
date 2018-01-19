@@ -1,0 +1,301 @@
+#ranking {
+  height: auto;
+  border-bottom: 20px solid #222;
+  background: url('../img/PRO_bg5.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  .wrapper {
+    .rank-picture {
+      padding-top: 10rem;
+      margin: auto;
+    }
+
+    .ContentBack {
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      .red_ladder {
+        .ranked, .non-ranked, .play-time {
+          background: rgba(50,5,5,0.5);
+
+          .title {
+            color: red;
+          }
+        }
+      }
+
+      .blue_ladder {
+        .ranked, .non-ranked, .play-time {
+          background: rgba(5,5,50,0.5);
+
+          .title {
+            color: #2f9eab;
+          }
+        }
+      }
+
+      .yellow_ladder {
+        .ranked, .non-ranked, .play-time {
+          background: rgba(50,80,15,0.5);
+
+          .title {
+            color: yellow;
+          }
+        }
+      }
+
+        .red_ladder, .blue_ladder, .yellow_ladder {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin: 5rem;
+
+          .ranked, .non-ranked, .play-time {
+            margin: 0 2rem;
+            padding: 10px;
+            width: 100%;
+            height: 400px;
+            border: 1px solid #111;
+            overflow-y: scroll;
+            box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+            .title {
+              font-weight: bold;
+              text-align: center;
+            }
+
+            .table-content {
+              margin: 0 1rem;
+              display: flex;
+              justify-content: space-around;
+              color: #fafafa;
+            }
+          }
+        }
+      }
+
+    /*.PRO_logo1 {
+      position: absolute;
+      width: 300px;
+      top: -25;
+      left: -30;
+    }*/
+  }
+}
+
+#guild {
+  height: auto;
+  min-height: 90vh;
+  background: url('../img/PRO_bg6.jpg');
+  background-color: #6294a3;
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  .wrapper {
+    .guild-picture {
+      padding-top: 7rem;
+      margin: auto;
+    }
+
+    .ContentBack {
+      display:flex;
+      flex-flow: row;
+
+      .red_guild {
+        background: rgba(80,5,5,0.5);
+
+        .badge1 {
+          width: 125px;
+          position: absolute;
+          right: 35;
+          bottom: 70;
+          opacity: 0.7;
+        }
+      }
+
+      .blue_guild {
+        background: rgba(5,5,50,0.5);
+
+        .badge2 {
+          width: 125px;
+          position: absolute;
+          right: 35;
+          bottom: 70;
+          opacity: 0.7;
+        }
+      }
+
+      .yellow_guild {
+        background: rgba(130,100,20,0.5);
+
+        .badge3 {
+          width: 125px;
+          position: absolute;
+          right: 35;
+          bottom: 70;
+          opacity: 0.7;
+        }
+      }
+
+      .red_guild, .blue_guild, .yellow_guild {
+        margin: 10rem auto;
+        padding: 5rem;
+        width: 600px;
+        height: 400px;
+        border: 1px solid #434343;
+        box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+        .table-content {
+          color: #fafafa;
+        }
+
+        .title {
+          font-weight: bold;
+          text-align: center;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+/*.lucario {
+  position: fixed;
+  right: 20;
+  bottom: 0;
+  width: 60px;
+  cursor: pointer;
+  z-index: 3;
+}*/
+
+@media screen and (min-width:3840px) and (min-height:2160px) {
+  #guild {
+    height: auto;
+    min-height: 75vh;
+    .wrapper {
+      .ContentBack {
+        .red_guild, .blue_guild, .yellow_guild {
+          margin: 15rem auto;
+          width: 700px;
+          height: 400px;
+          .badge1, .badge2, .badge3 {
+            width: 125px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1650px) {
+  #guild {
+    .wrapper {
+      .ContentBack {
+        .red_guild, .blue_guild, .yellow_guild {
+          .badge1, .badge2, .badge3 {
+            width: 95px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1480px) {
+  #guild {
+    background-size: cover;
+    background-position: left;
+    .wrapper {
+      .ContentBack {
+        flex-direction: column;
+        .red_guild, .blue_guild, .yellow_guild {
+          margin: 5rem auto!important;
+          padding: 5rem;
+          width: 650px;
+          height: 400px;
+          border: 1px solid #434343;
+          box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+          .badge1, .badge2, .badge3 {
+            width: 125px;
+            position: absolute;
+            display: block;
+            right: 55;
+            bottom: 70;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:980px) {
+  #ranking {
+    .wrapper {
+      .ContentBack {
+        .red_ladder, .blue_ladder, .yellow_ladder {
+          flex-wrap: wrap!important;
+
+          .ranked, .non-ranked, .play-time {
+            width: 500px;
+            height: 400px;
+            margin: 2.5rem 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:680px) {
+  #guild {
+    background-position: left;
+    .wrapper {
+      .badge1, .badge2, .badge3 {
+        display: none!important;
+      }
+
+      .ContentBack {
+        .red_guild, .blue_guild, .yellow_guild {
+          width: 100%;
+          height: auto;
+          overflow-y: scroll;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  #ranking {
+    background: url('../img/PRO_mobile.jpg');
+    background-size: contain;
+    background-color: #f0c06e;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    .wrapper {
+      .rank-picture {
+        padding-top: 5.5rem;
+      }
+      .ContentBack {
+        .red_ladder, .blue_ladder, .yellow_ladder {
+          margin-top: 2.25rem;
+          .ranked, .non-ranked, .play-time {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

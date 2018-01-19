@@ -1,0 +1,148 @@
+<html class="animated fadeIn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Revolution Online</title>
+    <meta name="description" content="Pokemon Revolution Online">
+    <meta name="keywords" content="Pokemon, PRO, Pokemon Revolution Online">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <!--<link rel="stylesheet" href="./css/aos.css">
+    <script src="./js/snow.js"></script>-->
+  </head>
+
+<body id="home">
+  <!--Social-->
+  <a id="twitter" href="#" onclick="window.open('https://twitter.com/intent/follow?ref_src=twsrc%5Etfw&region=follow_link&screen_name=PkmnRevolution&tw_p=followbutton;source=followbutton&amp;variant=1.1', 'twitter', 'toolbar=no, width=550, height=650'); trackSocial('Twitter', 'Follow', 'https://pokemon-revolution-online.net'); return true;" data-show-count="true" data-show-screen-name="false"><i class="social--icon fa fa-twitter"></i></a>
+  <a id="discord" href="https://discord.gg/FdtDfG4" target="_blank"><img class="discord" src="./img/icons/discord.png"></i></a>
+  <a id="insta" href="https://www.instagram.com/pokemonrevolutionofficial/" title="Instagram" target="_blank"><img class="insta" src="./img/icons/instagram.png"></a>
+  <a id="youtube" href="https://www.youtube.com/channel/UClvHt3jAq1sczmqDZl1ogjQ" title="Youtube" target="_blank"><img class="youtube" src="./img/icons/youtube.png"></a>
+  <a href="#home"><img class="munchlax" src="./img/icons/pikachu.png"></a>
+  <!--Social End-->
+
+  <header>
+    <nav>
+      <div class="mobile"><i class="menu social--icon fa fa-angle-double-down"></i> Menu </div>
+      <ul>
+        <img class="PRO" src="./img/icons/PRO.png">
+        <li class="nav-main" data-id="#home">
+        <a href="index.html">Home</a></li>
+        <li class="nav-main" data-id="#register">
+        <a href="register.html">Register</a></li>
+        <li class="nav-main" data-id="#download">
+        <a href="download.html">Download</a></li>
+        <li class="nav-main" data-id="#account">
+        <a href="https://pokemon-revolution-online.net/dashboard" target="_blank">Account</a></li>
+        <li class="nav-main" data-id="#support">
+        <a href="https://pokemon-revolution-online.net/Forum/viewforum.php?f=15" target="_blank">Support</a></li>
+        <li class="nav-main" data-id="#terms">
+        <a href="terms.html">Terms & Policies</a></li>
+        <li class="nav-main" data-id="#rules">
+        <a href="#">Terms & Policies</a>
+        <ul class="drop">
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="conditions.html">Terms & Conditions</a></li>
+        </ul>
+        </li>
+        <li class="nav-main" data-id="#ranking">
+        <a href="ranking.html">Ranking</a></li>
+        <li class="nav-main" data-id="#pvp">
+        <a href="pvp.html">PVP</a></li>
+        <li class="nav-main" data-id="#guild">
+        <a href="guild.html">Guild</a></li>
+        <li class="nav-main" data-id="#gallery">
+        <a href="gallery.html">Gallery</a></li>
+        <li class="nav-main" data-id="#forums">
+        <a href="http://pokemon-revolution-online.net/Forum/index.php" target="_blank">Forums</a></li>
+        <img class="eevee" src="./img/icons/eevee.png">
+      </ul>
+    </nav>
+  </header>
+
+  <section id="register">
+    <div class="wrapper">
+      <img class="PRO_logo1" src="./img/PRO_logo1.png">
+      <div class="Login_Form">
+        <form class="center" action="" method="post" id="user_registration" name="user_registration">
+          <input type="hidden" name="submitted" value="TRUE" />
+          <p><img class="register_logo" alt="" style ="padding:2rem" src="./img/icons/register0.png" /></p>
+          <table>
+            <tr>
+              <td>Username:<br />
+                <br />
+                <input class="textbox" size="20" style="color:black" id="txtCreateAccLoginUser" type="text" name="user" value="" maxlength="15" autocomplete="off" />
+                <br /><br />Password:<br />
+                <br />
+                <input class="textbox" size="20" style="color:black" onblur="checkPassLength(this);" type="password" name="password1" maxlength="20" id="pass" autocomplete="off" />
+                <br />
+                <br>Confirm Password:<br />
+                <br />
+                <input class="textbox"  size="20" style="color:black" type="password" name="password2" maxlength="20" id="pass2" autocomplete="off" />
+                <br /><br />
+                Email Address:<br /><br />
+                <input class="textbox" size="20" style="color:black" id="inputTextboxId1" type="text" name="email" maxlength="80" value="" autocomplete="off" />
+                <br /><br />
+                Verify Email Address:<br /><br />
+                <input class="textbox" size="20" style="color:black" id="inputTextboxId3" type="text" name="email1" maxlength="80" value="" autocomplete="off" />
+                <br /><br />
+                Verification<br /><br />
+                <div style="width:100%; margin:0 auto;" align="center">
+                  <div id="html_element"></div>
+                </div>
+                <br></br>By Registering you agree to our <a href="Terms.php">Terms &amp; Conditions</a> and the <a href="rules.php">Game Rules</a><br />
+                <br><font color="FFB600">Username Notice:</font><br>
+                <br>Think twice about your username.
+                <br>If Inappropriate, you will be suspended <font color="ff664f">permanently.</font><br>
+                <br />
+                <input id="RegisterButton" class="button" type="submit" name="submit" value="Register">
+                <br></br>
+              </td>
+            </tr>
+          </table>
+          <img class="professor_logo" alt="" src="./img/icons/professor.png" />
+        </form>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+        <br>
+        <div class="arrow_box">
+          <div id="arrow_box_content_one">
+          </div>
+        </div>
+        <div class="pass_box">
+          <div id="pass_box_content_one">
+          </div>
+        </div>
+        <div class="cpass_box">
+          <div id="cpass_box_content_one">
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <br><br>
+      <div style="margin: 0; padding: 0; text-align: center;">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer--catchphrase">
+        <img class="PRO" style="float:left" src="./img/icons/PRO.png">
+        Pokémon Copyright © 1995 - 2018 Nintendo/Creatures Inc./GAME FREAK Inc.<br>
+        Pokémon And All Respective Names are Trademarks of Nintendo 1996-2018<br>
+        PRO is not affiliated with Nintendo, Creatures Inc. and GAME FREAK Inc.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/menu.js"></script>
+  <!--<script src="./js/aos.js"></script>
+  <script>AOS.init();</script>-->
+  </body>
+</html>
