@@ -923,11 +923,11 @@ header nav .mobile {
 @media screen and (max-width: 980px) {
   #download .wrapper {
     padding-top: 5rem;
-    width: 80%;
-    right: 10%; } }
+    width: 80%; } }
 @media screen and (max-width: 780px) {
   #download {
-    padding-top: 0; }
+    padding-top: 0;
+    min-height: auto; }
     #download .wrapper {
       width: 100%;
       height: 100%;
@@ -941,35 +941,58 @@ header nav .mobile {
       #download .wrapper .PRO_logo1 {
         display: none; } }
 @media screen and (max-width: 580px) {
-  #download .wrapper .requirements h1 {
-    font-size: 2rem;
-    cursor: pointer; }
-  #download .wrapper .requirements h2 {
-    font-size: 2rem;
-    color: #2f8aab;
-    cursor: pointer; }
-  #download .wrapper .requirements hr {
-    width: 60%;
-    opacity: 0.6; }
-  #download .wrapper .requirements p {
-    font-size: 16px;
-    padding: 2rem; } }
-@media screen and (max-width: 400px) {
-  #download .wrapper .clients .windows .btn, #download .wrapper .clients #mac .btn, #download .wrapper .clients #linux .btn, #download .wrapper .clients #android .btn {
-    font-size: 10px; }
-  #download .wrapper .requirements h1 {
-    font-size: 2rem;
-    cursor: pointer; }
-  #download .wrapper .requirements h2 {
-    font-size: 2rem;
-    color: #2f8aab;
-    cursor: pointer; }
-  #download .wrapper .requirements hr {
-    width: 60%;
-    opacity: 0.6; }
-  #download .wrapper .requirements p {
-    font-size: 12px;
-    padding: 2rem; } }
+  #download .wrapper {
+    padding-top: 7.5rem; }
+    #download .wrapper .requirements h1 {
+      font-size: 2rem;
+      cursor: pointer; }
+    #download .wrapper .requirements h2 {
+      font-size: 2rem;
+      color: #2f8aab;
+      cursor: pointer; }
+    #download .wrapper .requirements hr {
+      width: 60%;
+      opacity: 0.6; }
+    #download .wrapper .requirements p {
+      font-size: 16px;
+      padding: 2rem; } }
+/*@media screen and (max-width:400px) {
+  #download {
+    .wrapper {
+      .clients {
+        .windows, #mac, #linux, #android {
+          .btn {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .requirements {
+
+        h1 {
+          font-size: 2rem;
+          cursor: pointer;
+        }
+
+        h2 {
+          font-size: 2rem;
+          color: #2f8aab;
+          cursor: pointer;
+        }
+
+        hr {
+          width: 60%;
+          opacity: 0.6;
+        }
+
+        p {
+          font-size: 12px;
+          padding: 2rem;
+        }
+      }
+    }
+  }
+}*/
 #rules {
   height: auto;
   min-height: 100vh;
