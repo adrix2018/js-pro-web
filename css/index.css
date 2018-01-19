@@ -1344,7 +1344,7 @@ header nav .mobile {
     width: 100%; } }
 @media screen and (max-width: 360px) {
   #gallery {
-    background-position: right; } }
+    background-position: left; } }
 html.lb-disable-scrolling {
   overflow: hidden;
   /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
