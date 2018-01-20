@@ -978,6 +978,14 @@ header nav .mobile {
   #download .wrapper .requirements p {
     font-size: 12px;
     padding: 2rem; } }
+.shaymin {
+  position: fixed;
+  right: 5;
+  bottom: 5;
+  width: 50px;
+  cursor: pointer;
+  z-index: 3; }
+
 #support {
   height: auto;
   min-height: 100vh;
