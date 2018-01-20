@@ -1019,7 +1019,8 @@ header nav .mobile {
         font-size: 18px;
         font-weight: bold; }
         #support .wrapper .disclaimer h3 a {
-          color: #5e9b2c; }
+          color: #91b870;
+          text-shadow: 1px 1px #000; }
       #support .wrapper .disclaimer h3:hover {
         text-decoration: underline; }
       #support .wrapper .disclaimer hr {
@@ -1029,7 +1030,7 @@ header nav .mobile {
         color: #fff;
         font-weight: bold; }
         #support .wrapper .disclaimer p a {
-          color: #72ad42; }
+          color: #91b870; }
         #support .wrapper .disclaimer p a:hover {
           text-decoration: underline; }
 
