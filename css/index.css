@@ -1470,8 +1470,7 @@ header nav .mobile {
           box-sizing: border-box;
           width: 280px;
           height: 250px;
-          margin: 1rem;
-          z-index: 1; }
+          margin: 1rem; }
           #gallery .wrapper #exit .container .gallery__item a:hover {
             background: 0; }
           #gallery .wrapper #exit .container .gallery__item .gallery__image {
