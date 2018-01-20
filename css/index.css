@@ -1477,6 +1477,14 @@ header nav .mobile {
       height: 60%;
       margin: auto;
       border-radius: 0; } }
+@media screen and (max-width: 780px) {
+  #gallery {
+    background: url("../img/gallery-mobile.jpg");
+    background-size: cover;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed; } }
 @media screen and (max-width: 680px) {
   #gallery .wrapper .video-bg {
     width: 100%; }
