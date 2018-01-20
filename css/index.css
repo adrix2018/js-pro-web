@@ -992,6 +992,108 @@ header nav .mobile {
     min-height: auto; }
     #download .wrapper {
       height: auto; } }
+.shaymin {
+  position: fixed;
+  right: 5;
+  bottom: 5;
+  width: 50px;
+  cursor: pointer;
+  z-index: 3; }
+
+#support {
+  height: auto;
+  min-height: 100vh;
+  background: url("../img/support.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+  #support .wrapper {
+    margin: auto;
+    padding: 2rem 3rem;
+    width: 60%;
+    background: rgba(5, 5, 5, 0.8);
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: 5px 0 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    #support .wrapper .terms h2 {
+      font-family: 'Audiowide';
+      color: #fff; }
+    #support .wrapper .terms hr {
+      width: 60%;
+      opacity: 0.7; }
+    #support .wrapper .disclaimer {
+      border: 1px solid #222;
+      border-radius: 5px;
+      margin-top: 2rem;
+      padding: 2.5rem;
+      background-color: rgba(90, 180, 140, 0.08);
+      box-shadow: 5px 0 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+      #support .wrapper .disclaimer h2 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        padding-bottom: 2.5rem; }
+      #support .wrapper .disclaimer h3 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold; }
+        #support .wrapper .disclaimer h3 a {
+          color: #91b870;
+          text-shadow: 1px 1px #000; }
+      #support .wrapper .disclaimer h3:hover {
+        text-decoration: underline; }
+      #support .wrapper .disclaimer hr {
+        width: 60%;
+        opacity: 0.7; }
+      #support .wrapper .disclaimer p {
+        color: #fff;
+        font-weight: bold; }
+        #support .wrapper .disclaimer p a {
+          color: #91b870; }
+        #support .wrapper .disclaimer p a:hover {
+          text-decoration: underline; }
+
+@media only screen and (min-width: 3840px) and (min-height: 2160px) {
+  #support {
+    padding-top: 30rem; }
+    #support .wrapper {
+      height: 60%; }
+      #support .wrapper .terms h2 {
+        font-size: 60px; }
+      #support .wrapper .disclaimer h2 {
+        font-size: 32px;
+        padding-bottom: 2.5rem; }
+      #support .wrapper .disclaimer h3 {
+        font-size: 28px; }
+      #support .wrapper .disclaimer p {
+        font-size: 23.5px; } }
+@media screen and (max-width: 1380px) {
+  #support .wrapper {
+    width: 80%;
+    top: 10%;
+    right: 10%; } }
+@media screen and (max-width: 850px) {
+  #support .wrapper {
+    width: 85%; } }
+@media screen and (max-width: 780px) {
+  #support {
+    background: url("../img/support-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    height: auto; }
+    #support .wrapper {
+      padding-top: 5rem;
+      width: 100%;
+      height: auto;
+      position: static; }
+      #support .wrapper .terms {
+        flex-flow: column wrap; } }
 #rules {
   height: auto;
   min-height: 100vh;
