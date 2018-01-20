@@ -1495,9 +1495,19 @@ header nav .mobile {
       border-radius: 0; }
   #gallery .wrapper #exit .bg-gallery {
     width: 100%; } }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) and (max-height: 640px) {
   #gallery {
-    background-position: top; } }
+    background: url("../img/gallery-mobile2.jpg");
+    background-size: contain;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    -webkit-background-size: contain;
+    -webkit-background-color: #fff;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-position: top;
+    -webkit-background-attachment: fixed; } }
 html.lb-disable-scrolling {
   overflow: hidden;
   /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
