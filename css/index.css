@@ -18,7 +18,7 @@ header nav ul {
   header nav ul .eevee {
     position: absolute;
     width: 3.5vw;
-    right: 1px; }
+    right: -10px; }
 header nav ul li:nth-child(7) {
   display: none; }
 header nav ul li:nth-child(n+10):nth-child(-n+11) {
@@ -38,6 +38,8 @@ header nav ul li a:hover {
   color: #fff;
   background: #121212;
   transition: all 0.2s ease-in-out !important; }
+header nav ul li a:last-child:hover {
+  border-bottom-right-radius: 30rem; }
 header nav ul > li ul.drop {
   width: 14.7%;
   display: none;
