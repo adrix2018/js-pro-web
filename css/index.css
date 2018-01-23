@@ -1725,6 +1725,10 @@ body {
   text-align: center;
   overflow-x: hidden; }
 
+.adsbygoogle {
+  display: none!important;
+}
+
 #snow {
   position: absolute;
   height: 75%;
