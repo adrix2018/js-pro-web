@@ -1721,23 +1721,6 @@ body {
   text-align: center;
   overflow-x: hidden; }
 
-.adsbygoogle {
-  display: inline-block;
-  width: 728px;
-  height: 90px;
-  margin: auto;
-  border: 2px solid #fff;
-  margin-bottom: 5%; }
-
-.adsbygoogle2 {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  bottom: 40;
-  width: 300px;
-  height: 600px;
-  border: 2px solid #fff; }
-
 #snow {
   position: absolute;
   height: 75%;
@@ -1840,7 +1823,7 @@ footer {
     position: absolute;
     top: -20; } }
 @media only screen and (max-width: 780px) {
-  .adsbygoogle, .adsbygoogle2 {
+  .adsbygoogle {
     display: none; } }
 @media only screen and (max-width: 550px) {
   footer {
