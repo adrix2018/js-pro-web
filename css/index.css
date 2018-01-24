@@ -323,6 +323,7 @@ header nav .mobile {
 @media screen and (max-width: 780px) {
   #status #server-status {
     display: block;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -335,6 +336,8 @@ header nav .mobile {
   #status .status-all {
     padding-top: 40% !important; } }
 @media screen and (max-width: 530px) {
+  #status #server-status {
+    margin-top: 15%; }
   #status .status-all {
     padding-top: 50% !important; } }
 @media screen and (max-width: 450px) {
