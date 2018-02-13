@@ -1928,7 +1928,7 @@ body {
   overflow-x: hidden; }
 
 .adsbygoogle {
-  display: none !important; }
+  //display: none !important; }
 
 #snow {
   position: absolute;
